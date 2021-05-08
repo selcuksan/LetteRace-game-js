@@ -172,12 +172,14 @@ function random() {
 }
 function loseCheck() {
     if (game.COUNTER >= 5 || mcQueen.speed < -cvs.width / 3) {
-        ctx.fillText(`KAYBETTİNİZ PUANINIZ: ${game.SCORE}`, cvs.width / 2.7, cvs.height / 6);
+        ctx.fillText(`KAYBETTİNİZ PUANINIZ: ${game.SCORE}`, cvs.width / 2.5, cvs.height / 8);
+        ctx.fillText(`YENİDEN OYNAMAK İÇİN EKRANA TIKLAYIN`, cvs.width / 2.9, cvs.height / 5.5);
         lose.play();
         if (game.SCORE > game.BEST_SCORE) {
             localStorage.setItem('bestScore', game.SCORE);
             game.BEST_SCORE = localStorage.getItem('bestScore');
-        }
+        } 
+        again();
         return true;
     }
     else return false;
@@ -191,6 +193,7 @@ function winCheck() {
             localStorage.setItem('bestScore', game.SCORE);
             game.BEST_SCORE = localStorage.getItem('bestScore');
         }
+        again();
         return true;
     } else return false;
 }
@@ -214,11 +217,8 @@ function gravityCheck() {
     }
 }
 function again() {
-    var txt;
-    var r = confirm("Press a button!");
-    if (r == true) {
-        txt = "You pressed OK!";
-    } else {
-        txt = "You pressed Cancel!";
-    }
+    document.addEventListener('click', function (e) {
+        location.reload();
+    })
 }
+
