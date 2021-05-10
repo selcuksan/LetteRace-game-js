@@ -148,7 +148,7 @@ document.addEventListener("keyup", function (e) {
     }
     for (let i = 0; i < paras.length; i++) {
         if (data[button] === paras[i].rand) {
-            mcQueen.speed += cvs.width / 40;
+            mcQueen.speed += cvs.width / 45;
             game.SCORE += scoreInc;
             scoreInc += 0.25;
             backG.gravity += 0.1;
