@@ -8,7 +8,7 @@
 - Piston kupasını kazanmak için McQueen'in sana ihtiyacı var. 
 Paraşütlerde yazan harfleri haklarını bitirmeden bil ve McQueen'in bitiş çizgisine ulaşmasına yardım et!
 
-  Oyunu oynamak için hemen [tıkla](https://selcuksan.github.io/game-js/) !
+  Oyunu oynamak için hemen [tıkla](https://selcuksan.github.io/LetteRace-game-js/) !
 
 
 # Oyundan Görüntüler
